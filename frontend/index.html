@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Ticket Booking System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Event Ticket Booking System</h1>
+        <p>Reliable reservations with redundancy and chaos testing.</p>
+      </header>
+
+      <section class="card">
+        <h2>Reserve a Ticket</h2>
+        <form id="reservation-form">
+          <label>
+            Event
+            <select id="event-select" required></select>
+          </label>
+          <label>
+            Name
+            <input type="text" id="name-input" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" id="email-input" placeholder="you@example.com" required />
+          </label>
+          <button type="submit">Reserve Ticket</button>
+        </form>
+        <div id="reservation-result" class="message"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Reservations</h2>
+          <button id="list-button" type="button">List Reservations</button>
+        </div>
+        <div id="reservations-table"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Debug Panel</h2>
+          <div class="button-group">
+            <button id="enable-chaos" type="button">Enable Chaos</button>
+            <button id="disable-chaos" type="button">Disable Chaos</button>
+          </div>
+        </div>
+        <div id="status-panel" class="status"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
