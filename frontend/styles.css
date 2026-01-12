@@ -1,0 +1,119 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fb;
+  color: #1e2a3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d9e2f2;
+  font-size: 14px;
+}
+
+button {
+  background: #2f6fed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #255bd4;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.message {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.message.success {
+  background: #e6f5ed;
+  color: #1f7a40;
+}
+
+.message.error {
+  background: #feecee;
+  color: #b42318;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 12px 8px;
+  border-bottom: 1px solid #eef2f7;
+  font-size: 14px;
+}
+
+.status {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.status strong {
+  display: inline-block;
+  min-width: 140px;
+}
